@@ -19,6 +19,16 @@ class Home extends Component
     }
 
     /**
+     * Return the Hoodies collection.
+     *
+     * @return void
+     */
+    public function getHoodiesCollectionProperty()
+    {
+        return Url::whereElementType(Collection::class)->whereSlug('hoodies')->first()?->element ?? null;
+    }
+
+    /**
      * Return all images in sale collection.
      *
      * @return void

@@ -2,7 +2,7 @@
      x-data="{
          linesVisible: @entangle('linesVisible')
      }">
-    <button class="grid w-16 h-16 transition border-l border-gray-100 lg:border-l-transparent hover:opacity-75"
+    <button class="grid w-8 h-8 transition bg-[#8f0949] hover:bg-pink-600 text-white"
             x-on:click="linesVisible = !linesVisible">
         <span class="sr-only">Cart</span>
 
@@ -136,10 +136,10 @@
                     Checkout
                 </a>
 
-                <a class="inline-block text-sm font-medium text-gray-600 underline hover:text-gray-500"
-                   href="{{ url('/') }}">
+                <button class="inline-block text-sm font-medium text-gray-600 underline hover:text-gray-500"
+                        x-on:click="linesVisible = !linesVisible">
                     Continue Shopping
-                </a>
+                </button>
             </div>
         @endif
     </div>

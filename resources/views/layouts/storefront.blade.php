@@ -7,7 +7,7 @@
         name="viewport"
         content="width=device-width, initial-scale=1"
     >
-    <title>Demo Storefront</title>
+    <title>{{ env('APP_NAME') }}</title>
     <meta
         name="description"
         content="Example of an ecommerce storefront built with Lunar."
@@ -22,7 +22,7 @@
     ></script>
     <link
         rel="icon"
-        href="{{ asset('favicon.svg') }}"
+        href="{{ asset('storage/keftiu_acrobat_logo.png') }}"
     >
     @livewireStyles
 </head>

@@ -3,10 +3,10 @@
     <input name="term"
            type="search"
            placeholder="Search for products"
-           class="w-full pl-10 text-sm border-2 border-gray-100 rounded-lg"
+           class="w-full pl-2 text-sm border-1 border-white bg-black color-white placeholder:text-white"
            value="{{ $this->term }}" />
 
-    <button class="absolute p-2 text-gray-600 transition -translate-y-1/2 rounded-md left-1 top-1/2 hover:bg-gray-50">
+    <button class="absolute p-2 text-white hover:text-pink-600 transition -translate-y-1/2 right-1 top-1/2">
         <span class="sr-only">Submit Search</span>
 
         <svg xmlns="http://www.w3.org/2000/svg"
